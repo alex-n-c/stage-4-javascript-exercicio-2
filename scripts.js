@@ -12,7 +12,7 @@ class Studente{
 
 let listOfStudents = [];
 
-for(let amount = 4; amount <= 1; amount++){
+for(let amount = 1; amount <= 4; amount++){
     let studente = new Studente();
     
     studente.name = prompt('Informe o nome do aluno(a)').trim(); 
@@ -33,7 +33,7 @@ for(let amount = 4; amount <= 1; amount++){
     listOfStudents.push(studente);
 }
 
-console.log(listOfStudents);
+console.log(listOfStudents.length);
 
 for (const studente of listOfStudents) {
     alert(`A média do aluno(a) ${studente.name} é ${studente.averageNote()} \n ${studente.approved() ? 'Parabéns. Você foi aprovado.':'Não foi dessa vez. Tente novamente.'}`)
